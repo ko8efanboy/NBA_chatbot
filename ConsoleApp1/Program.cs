@@ -4,14 +4,16 @@
         string excuseLebron = "I don't think Lebron is the GOAT because he has lost in the Finals too many times.";
         string otherResponse = "i dont know about them yet";
         string excuseKobe = "Kobe was a great player, but he is not the GOAT.\nRip Mamba.\nDefinitely top 3";
-        string excuseJordan = "Jordan played plumbers and WE DONE WITH THE 90s.";
+        string excuseJordan = "Jordan played plumbers and WE DONE WITH THE 90s. AND HE HAS NO LEFT";
         string goat = string.Empty;
-        string excuseWilt = "Wilt was a great player, but he is not the GOAT.\nHe played against plumbers. \n He was also 87 feet tall";
+        string excuseWilt = "Wilt was a great player, but he is not the GOAT.\nHe played against plumbers. \n He was also 87 feet tall. \nWas the greatest athlete of all time though.";
+        string excuseKareem = "He got Passed by lebron in points, Played in 70s which was the fastest paced and highest scoring era in NBA history. \nI will admit he did have the most unstoppable shot of all time.";
         
         string lebronJames = "Lebron James";
         string kobeBryant = "Kobe Bryant";
         string michaelJordan = "Michael Jordan";
         string wiltChamberlain = "Wilt Chamberlain";
+        string kareemAbdul = "Kareem Abdul-Jabbar";
         
         Console.WriteLine(intro);
         Console.ReadLine();
@@ -34,6 +36,14 @@
         {
             goat = wiltChamberlain;
         }
+        if (response.Equals("i dont know", StringComparison.OrdinalIgnoreCase))
+        {
+            goat = otherResponse;
+        }
+        if (response.Equals("kareem", StringComparison.OrdinalIgnoreCase))
+        {
+            goat = kareemAbdul;
+        }
 
         if (goat == lebronJames)
         {
@@ -51,3 +61,9 @@
         {
             Console.WriteLine(excuseWilt);
         }
+        if (goat == kareemAbdul)
+        {
+            Console.WriteLine(excuseKareem);
+        }
+        
+        
