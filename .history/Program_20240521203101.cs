@@ -4,11 +4,9 @@
     {
         string intro = "Hello! Let's talk about basketball!";
         string whoGoat = "Who do you think is the NBA GOAT?";
-        string excuseLebron =
-            "I don't think Lebron is the GOAT because he has lost in the Finals too many times.";
+        string excuseLebron = "I don't think Lebron is the GOAT because he has lost in the Finals too many times.";
         string otherResponse = "I dont know about them yet";
-        string excuseKobe =
-            "Kobe was a great player, but he is not the GOAT.\nRip Mamba.\nDefinitely top 3";
+        string excuseKobe = "Kobe was a great player, but he is not the GOAT.\nRip Mamba.\nDefinitely top 3";
         string excuseJordan = "Jordan played plumbers and WE DONE WITH THE 90s. AND HE HAS NO LEFT";
         string goat = string.Empty;
         string keepGoing = "do you want to discuss anyone else?";
@@ -97,13 +95,17 @@
                 Console.WriteLine(excuseRussell);
             }
 
-            { }
+            {
+
+            }
             Console.WriteLine(keepGoing);
             string continueAnswerStr = Console.ReadLine();
             if (continueAnswerStr.Equals("yes", StringComparison.OrdinalIgnoreCase))
             {
                 goto My_label;
+
             }
         }
     }
 }
+    
