@@ -11,13 +11,14 @@
             "Kobe was a great player, but he is not the GOAT.\nRip Mamba.\nDefinitely top 3";
         string excuseJordan = "Jordan played plumbers and WE DONE WITH THE 90s. AND HE HAS NO LEFT";
         string goat = string.Empty;
-        string keepGoing = "do you want to discuss anyone else?";
+        string keepGoing =  "do you want to discuss anyone else?";
         string excuseWilt =
             "Wilt was a great player, but he is not the GOAT.\nHe played against plumbers. \nHe was also 87 feet tall. \nWas the greatest athlete of all time though.";
         string excuseKareem =
             "He got Passed by lebron in points \nPlayed in 70s which was the fastest paced and highest scoring era in NBA history. \nI will admit he did have the most unstoppable shot of all time.";
         string excuseRussell =
             "Bill Russell was a civil rights legend but if we being real he played with 12 hall of famers at a time where there was like 8 teams in the leauge. \n11 Rings in 13 years is crazy though\nAlso never even average 19 points per game LMAO";
+        string excuseJokic = "time will tell, you might be right 15 years from now."
 
         string lebronJames = "Lebron James";
         string kobeBryant = "Kobe Bryant";
@@ -25,6 +26,7 @@
         string wiltChamberlain = "Wilt Chamberlain";
         string kareemAbdul = "Kareem Abdul-Jabbar";
         string billRussell = "Bill Russell";
+        string jokic = "Nikola Jokic"
 
         My_label:
         {
@@ -95,6 +97,10 @@
             if (goat == billRussell)
             {
                 Console.WriteLine(excuseRussell);
+            }
+            if (goat == jokic)
+            {
+                Console.WriteLine(excuseJokic);
             }
 
             { }
