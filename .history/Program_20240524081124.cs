@@ -1,9 +1,6 @@
 ﻿public class Program
 {
-    public static void Main(string[] args)
     {
-        
-              
         string intro = "Hello! Let's talk about basketball!";
         string whoGoat = "Who do you think is the NBA GOAT?";
         string excuseLebron =
