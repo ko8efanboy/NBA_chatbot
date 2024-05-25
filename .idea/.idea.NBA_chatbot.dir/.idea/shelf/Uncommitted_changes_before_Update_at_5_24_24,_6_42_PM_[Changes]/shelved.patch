@@ -1,0 +1,103 @@
+Index: .vscode/settings.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n    \"cSpell.words\": [\n        \"dont\",\n        \"famers\",\n        \"Jabbar\",\n        \"leauge\",\n        \"Lebron\",\n        \"LMAO\"\n    ]\n}
+===================================================================
+diff --git a/.vscode/settings.json b/.vscode/settings.json
+--- a/.vscode/settings.json	
++++ b/.vscode/settings.json	
+@@ -1,10 +1,85 @@
+ {
+-    "cSpell.words": [
+-        "dont",
+-        "famers",
+-        "Jabbar",
+-        "leauge",
+-        "Lebron",
+-        "LMAO"
++  "typescript.suggest.paths": false,
++  "workbench.settings.applyToAllProfiles": ["editor.suggest.showPaths"],
++  "extensions.ignoreRecommendations": true,
++  "files.autoSave": "onFocusChange",
++  "dotnetAcquisitionExtension.enablePreviewFeatures": true,
++  "editor.fontSize": 15,
++  "[csharp]": {
++    "editor.defaultFormatter": "csharpier.csharpier-vscode"
++  },
++  "files.associations": {
++    "MS Learn": "csharp"
++  },
++  "terminal.integrated.profiles.osx": {
++    "bash": {
++      "path": "bash",
++      "args": ["-l"],
++      "icon": "terminal-bash"
++    },
++    "zsh": {
++      "path": "zsh",
++      "args": ["-l"]
++    },
++    "fish": {
++      "path": "fish",
++      "args": ["-l"]
++    },
++    "tmux": {
++      "path": "tmux",
++      "icon": "terminal-tmux"
++    }
++  },
++  "github.copilot.enable": {
++    "*": true,
++    "plaintext": false,
++    "markdown": false
++  },
++  "cSpell.diagnosticLevel": "Warning",
++  "workbench.colorTheme": "SynthWave '84",
++  "[jsonc]": {
++    "editor.defaultFormatter": "esbenp.prettier-vscode"
++  },
++  "workbench.settings.editor": "json",
++  "workbench.settings.useSplitJSON": true,
++  "workbench.editor.enablePreview": true,
++  "editor.formatOnPaste": true,
++  "telemetry.enableTelemetry": false,
++  "workbench.editor.highlightModifiedTabs": true,
++  "git.enableSmartCommit": true,
++  "launch": {
++    "version": "0.2.0",
++    "configurations": [
++      {
++        "name": ".NET Core Launch (console)",
++        "type": "coreclr",
++        "request": "launch",
++        "preLaunchTask": "build",
++        "program": "${workspaceFolder}/bin/Debug/net8.0/MyConsoleApp.dll",
++        "args": [],
++        "cwd": "${workspaceFolder}",
++        "stopAtEntry": false,
++        "console": "internalConsole",
++        "logging": {
++          "engineLogging": false
++        },
++        "internalConsoleOptions": "openOnSessionStart"
++      }
+     ]
+-}
+\ No newline at end of file
++  },
++  "tasks": {
++    "version": "2.0.0",
++    "tasks": [
++      {
++        "label": "build",
++        "command": "dotnet",
++        "type": "process",
++        "args": [
++          "build",
++          "${workspaceFolder}/MyConsoleApp.csproj"
++        ],
++        "problemMatcher": "$msCompile"
++      }
++    ]
++  }
++}
