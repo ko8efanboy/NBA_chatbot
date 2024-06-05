@@ -74,6 +74,10 @@ public class Program
             {
                 Console.WriteLine(handler.excuseTim);
             }
+            else if (goar == handler.yaoMing)
+            {
+                Console.WriteLine(handler.excuseYao)
+            }
             else if (goat == handler.otherResponse)
             {
                 Console.WriteLine("That's a trash choice, and they are irrelevant (DM me on Discord if I just forgot about them)");

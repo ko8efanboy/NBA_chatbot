@@ -16,7 +16,9 @@ public class GoatHandler
     public string excuseShaq = "If we were talking most DOMINANT ever you would be right and it wouldn't even be up for debate, but we're not so learn how to read.\nFat as hell and couldn't make a freethrow\nLess rings than Mr. MAMBA\nIf he had mamba mentality and listened to Kobe he would be the GOAT no question, not even close.\nAlso he did stay with Kobe so that is a no go for that one.\nGood try though I guess.";
     public string excuseSteph = "I mean he is the greatest shooter of all time and the greatest PG of all time but he is not even close to the GOAT.\nHe has only won 1 Finals MVP and he has lost in the Finals twice.\nHe is also a liability on defense.\nDecent though NGL.";
     public string excuseTim = "Greatest PF of all time but don't talk about that fundamental bastard to me.\nI shouldn't even talk to you with that opinion get outta here.\n5 rings and 3 Finals MVPs is good but not GOAT worthy.\nAlso he is boring as hell to watch.\nMan was the GOAT fundamental player though, still try again.";
-
+    public string excuseYao = "what is it bas said? \n If you could see how I grown\nMoney stack taller than\nYao, Yao, Yao, Yao Ming. \n Listen to that song its so fire\n https://www.youtube.com/watch?v=g0JJsPA50G0"
+    
+    
     public string lebronJames = "Lebron James";
     public string kobeBryant = "Kobe Bryant";
     public string michaelJordan = "Michael Jordan";
@@ -31,6 +33,7 @@ public class GoatHandler
     public string shaquilleOneal = "Shaquille O'Neal";
     public string steph = "Steph Curry";
     public string timDuncan = "Tim Duncan";
+    public string yaoMing = "Yao Ming";
 
     public string GetGoat(string response)
     {
@@ -93,6 +96,10 @@ public class GoatHandler
         else if (response.Equals("tim", StringComparison.OrdinalIgnoreCase))
         {
             return timDuncan;
+        }
+        else if (response.Equals("yao", StringComparison.OrdinalIgnoreCase))
+        {
+            return yaoMing;
         }
         else
         {
